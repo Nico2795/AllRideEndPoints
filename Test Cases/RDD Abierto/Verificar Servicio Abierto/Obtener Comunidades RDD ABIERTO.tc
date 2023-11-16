@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Si es que falla significa que no tiene el RDD Abierto y no se puede obtener la comunidad</description>
+   <name>Obtener Comunidades RDD ABIERTO</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2a6514cd-86f7-4cd0-b199-ae5a7502f483</testCaseGuid>
+</TestCaseEntity>

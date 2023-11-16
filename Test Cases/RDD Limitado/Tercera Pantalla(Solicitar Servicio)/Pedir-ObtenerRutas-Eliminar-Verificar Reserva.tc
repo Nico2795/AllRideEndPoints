@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Si falla, el servicio no pudo ser creado o eliminado correctamente</description>
+   <name>Pedir-ObtenerRutas-Eliminar-Verificar Reserva</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d0bd35c1-320e-420b-beef-b7549d1fa161</testCaseGuid>
+</TestCaseEntity>

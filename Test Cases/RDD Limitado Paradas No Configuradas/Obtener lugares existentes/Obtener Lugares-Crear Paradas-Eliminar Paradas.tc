@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Si la prueba falla, significa que se están creando reservas con paradas no configuradas correctamente. Si pasa, es que las paradas que no se encuentran configuradas no generan reserva. Lo que es correcto</description>
+   <name>Obtener Lugares-Crear Paradas-Eliminar Paradas</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>74567917-c2cd-4bc2-9c31-63677d0d9850</testCaseGuid>
+</TestCaseEntity>
