@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se crea el servicio con dos usuarios distintos, con tiempos distintos y destinos iguales. Si la prueba falla, es que los servicios se unieron</description>
+   <name>Crear servicio_Tiempos Distintos_Usuarios Distintos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0cad5056-1e56-459a-b531-6e188f2451f8</testCaseGuid>
+</TestCaseEntity>

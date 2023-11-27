@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se crea el servicio con multiples paradas y diferentes usuarios</description>
+   <name>Crear Servicio Multiples Usuarios Especificos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>21d23ff7-8f95-4a42-b9eb-7f1fa0d6423b</testCaseGuid>
+</TestCaseEntity>

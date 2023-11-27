@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se asigna el conductor</description>
+   <name>assign_Driver</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>185cf370-cc5c-4486-81b3-4956b61fa8cf</testCaseGuid>
+</TestCaseEntity>

@@ -39,13 +39,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.TokenNico}</value>
-      <webElementGuid>dd598848-b78a-45e2-b104-8cca50290fa8</webElementGuid>
+      <webElementGuid>2176fe2c-66ea-4352-90c1-0ddabebf0634</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.0.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.pedirODD}</restUrl>
+   <restUrl>${GlobalVariable.requestODD}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se obtiene el servicio correspondiente a la comunidad</description>
+   <name>obtener_Servicio</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>21dfb7df-0b0c-41f8-9efc-864fa7ee5b04</testCaseGuid>
+</TestCaseEntity>
