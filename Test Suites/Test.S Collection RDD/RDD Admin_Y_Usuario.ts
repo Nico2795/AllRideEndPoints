@@ -45,16 +45,6 @@
             <runConfigurationId>Web Service</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Flujos RDD/RDD Admin/Flujo Usuario Aleatorio/Flujo RDD Admin Destino Comun</testSuiteEntity>
-      </TestSuiteRunConfiguration>
-      <TestSuiteRunConfiguration>
-         <configuration>
-            <groupName>Web Service</groupName>
-            <profileName>RDD-Stage</profileName>
-            <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Web Service</runConfigurationId>
-         </configuration>
-         <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Flujos RDD/RDD Admin/Flujo Usuario Especifico/Flujo RDD Admin Destino Comun</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>

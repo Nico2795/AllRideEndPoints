@@ -16,42 +16,35 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+// Supongamos que tu respuesta es un String JSON almacenado en la variable 'response'
+def response = WS.sendRequest(findTestObject('Calendarizada/obtener_Lista_Orden_Paradas')).getResponseText()
 
-Response = WS.sendRequest(findTestObject('RDD Admin/obtener_Vehiculos'))
-
-
-// Obtener el contenido de la respuesta como una cadena de texto
-def responseBody = Response.getResponseText()
-
-// Parsear la respuesta JSON
+// Parsear el JSON
 def jsonSlurper = new groovy.json.JsonSlurper()
-def jsonResponse = jsonSlurper.parseText(responseBody)
+def jsonResponse = jsonSlurper.parseText(response)
 
-// Obtener el _id del vehiculo
-def vehicleId = jsonResponse[0]._id
+// Supongamos que 'routeId' es la clave que contiene el ID de la ruta que obtuviste anteriormente
+def routeId = GlobalVariable.routeId
 
-// Almacenar el _id en la variable global
-GlobalVariable.vehicleId = vehicleId
+// Encontrar todos los 'stopId' asociados al 'routeId'
+def stopIds = jsonResponse.findAll { it.routeId._id == routeId }*.stopId?._id
 
-// Imprimir el _id para verificar
-println("El _id del vehiculo es: ${vehicleId}")
+// Verificar si hay al menos un 'stopId' disponible
+if (stopIds) {
+    // Elegir el primer 'stopId' de la lista
+    def selectedStopId = stopIds[0]
 
-// Verificar si hay al menos un elemento en la lista
-if (jsonResponse.size() > 0) {
-	// Obtener la capacidad del vehiculo desde el objeto "category"
-	def capacity = jsonResponse[0].category?.capacity
-
-	// Verificar si la capacidad existe antes de almacenarla
-	if (capacity != null) {
-		// Almacenar la capacidad en la variable global
-		GlobalVariable.vehicleCapacity = capacity
-
-		// Imprimir la capacidad para verificar
-		println("La capacidad del vehiculo es: ${capacity}")
-	} else {
-		println("No se pudo encontrar la capacidad del vehiculo en la respuesta JSON.")
-	}
+    // Imprimir el 'stopId' seleccionado
+    println "El stopId seleccionado asociado al routeId $routeId es: $selectedStopId"
+	//Almacenamos en una variable global el stopId asociado a esa ruta
+	GlobalVariable.selectedStopId = selectedStopId
+	
 } else {
-	println("La respuesta JSON no contiene elementos.")
+    println "No hay stopIds disponibles para el routeId $routeId"
 }
+
+
+ 
+
+
 

@@ -19,150 +19,139 @@ import org.openqa.selenium.Keys as Keys
 
 GlobalVariable.bodyRoute = """
 {
-  "name": "Prueba Katalon1",
-  "description": "Prueba Katalon1",
-  "communities": [${GlobalVariable.communityId}],
-  "superCommunities": ["653fd68233d83952fafcd4be"],
-  "ownerIds": [
-    {
-      "id": "653fd601f90509541a748683",
-      "role": "community"
-    }
-  ],
-  "shapeId": "${GlobalVariable.shapeId}",
-  "usesBusCode": false,
-  "usesVehicleList": false,
-  "usesDriverCode": false,
-  "allowsOnlyExistingDrivers": true,
-  "allowsMultipleDrivers": false,
-  "dynamicSeatAssignment": false,
-  "usesTickets": false,
-  "startsOnStop": false,
-  "notNearStop": false,
-  "routeCost": 0,
-  "ticketCost": 0,
-  "excludePassengers": {
-    "active": false,
-    "excludeType": "dontHide"
-  },
-  "restrictPassengers": {
-    "enabled": false,
-    "allowed": []
-  },
-  "endDepartureNotice": {
-    "enabled": false,
-    "lastStop": null
-  },
-  "scheduling": {
-    "enabled": true,
-    "limitUnit": "minutes",
-    "limitAmount": 30,
-    "lateNotification": {
-      "enabled": false,
-      "amount": 0,
-      "unit": "minutes"
-    },
-    "stopNotification": {
-      "enabled": false,
-      "amount": 0,
-      "unit": "minutes"
-    },
-    "startLimit": {
-      "upperLimit": {
-        "amount": 60,
-        "unit": "minutes"
-      },
-      "lowerLimit": {
-        "amount": 30,
-        "unit": "minutes"
-      }
-    },
-    "schedule": [
+   "name":"Prueba mantencion Recursos3",
+   "description":"Prueba mantencion Recursos3",
+   "communities":[${GlobalVariable.communityId}],
+   "superCommunities":["653fd68233d83952fafcd4be"],
+   "ownerIds":[
       {
-        "enabled": true,
-        "day": "mon",
-        "time": "12:00",
-        "estimatedArrival": null,
-        "stopSchedule": [],
-        "capped": {
-          "enabled": false,
-          "capacity": 0
-        },
-        "vehicleCategoryId": null,
-        "defaultResources": []
+         "id":"653fd601f90509541a748683",
+         "role":"community"
+      }
+   ],
+   "shapeId":"${GlobalVariable.shapeId}",
+   "usesBusCode":false,
+   "usesVehicleList":true,
+   "usesDriverCode":false,
+   "allowsOnlyExistingDrivers":false,
+   "allowsMultipleDrivers":false,
+   "dynamicSeatAssignment":false,
+   "usesTickets":false,
+   "startsOnStop":false,
+   "notNearStop":false,
+   "routeCost":0,
+   "ticketCost":0,
+   "excludePassengers":{
+      "active":false,
+      "excludeType":"dontHide"
+   },
+   "restrictPassengers":{
+      "enabled":false,
+      "allowed":[]
+   },
+   "endDepartureNotice":{
+      "enabled":false,
+      "lastStop":null
+   },
+   "scheduling":{
+      "enabled":true,
+      "limitUnit":"minutes",
+      "limitAmount":30,
+      "lateNotification":{
+         "enabled":false,
+         "amount":0,
+         "unit":"minutes"
       },
-      {
-        "enabled": true,
-        "day": "wed",
-        "time": "12:00",
-        "estimatedArrival": null,
-        "stopSchedule": [],
-        "capped": {
-          "enabled": false,
-          "capacity": 0
-        },
-        "vehicleCategoryId": null,
-        "defaultResources": []
+      "stopNotification":{
+         "enabled":false,
+         "amount":0,
+         "unit":"minutes"
+      },
+      "startLimit":{
+         "upperLimit":{
+            "amount":60,
+            "unit":"minutes"
+         },
+         "lowerLimit":{
+            "amount":30,
+            "unit":"minutes"
+         }
+      },
+      "schedule":[
+         {
+            "enabled":true,
+            "day":"fri",
+            "time":"21:00",
+            "estimatedArrival":null,
+            "stopSchedule":[],
+            "capped":{
+               "enabled":false,
+               "capacity":0
+            },
+            "vehicleCategoryId":null,
+            "defaultResources":[]
+         }
+      ],
+      "stopOnReservation":false,
+      "restrictions":{
+         "customParams":{
+            "enabled":false,
+            "params":[]
+         }
       }
-    ],
-    "stopOnReservation": false,
-    "restrictions": {
-      "customParams": {
-        "enabled": false,
-        "params": []
-      }
-    }
-  },
-  "customParams": {
-    "enabled": false,
-    "params": []
-  },
-  "customParamsAtTheEnd": {
-    "enabled": false,
-    "params": []
-  },
-  "validationParams": {
-    "enabled": false,
-    "driverParams": [],
-    "passengerParams": []
-  },
-  "allowsServiceSnapshots": false,
-  "allowsNonServiceSnapshots": false,
-  "labels": [],
-  "roundOrder": [],
-  "anchorStops": [],
-  "originStop": "655d11d88a5a1a1ff0328464",
-  "destinationStop": "655d11d88a5a1a1ff0328466",
-  "hasBeacons": false,
-  "hasCapacity": false,
-  "isStatic": false,
-  "showParable": false,
-  "extraInfo": "",
-  "color": "892b2b",
-  "usesManualSeat": false,
-  "allowsManualValidation": false,
-  "usesDriverPin": false,
-  "hasBoardings": false,
-  "hasUnboardings": false,
-  "allowsDistance": false,
-  "allowGenericVehicles": false,
-  "hasExternalGPS": false,
-  "departureHourFulfillment": {
-    "enabled": false,
-    "ranges": []
-  },
-  "visible": true,
-  "active": true,
-  "usesOfflineCount": false,
-  "usesTextToSpeech": false,
-  "hasBoardingCount": false,
-  "hasRounds": false,
-  "hasUnboardingCount": false,
-  "timeOnRoute": ${GlobalVariable.timeOnRoute},
-  "distance": ${GlobalVariable.distance},
-  "distanceInMeters": ${GlobalVariable.distanceInMeters},
-  "route_type": 3
+   },
+   "customParams":{
+      "enabled":false,
+      "params":[]
+   },
+   "customParamsAtTheEnd":{
+      "enabled":false,
+      "params":[]
+   },
+   "validationParams":{
+      "enabled":false,
+      "driverParams":[],
+      "passengerParams":[]
+   },
+   "allowsServiceSnapshots":false,
+   "allowsNonServiceSnapshots":false,
+   "labels":[],
+   "roundOrder":[],
+   "anchorStops":[],
+   "originStop":"655d11d88a5a1a1ff0328466",
+   "destinationStop":"655d11d88a5a1a1ff0328464",
+   "hasBeacons":false,
+   "hasCapacity":false,
+   "isStatic":false,
+   "showParable":false,
+   "extraInfo":"",
+   "color":"b24646",
+   "usesManualSeat":true,
+   "allowsManualValidation":false,
+   "usesDriverPin":false,
+   "hasBoardings":false,
+   "hasUnboardings":false,
+   "allowsDistance":false,
+   "allowGenericVehicles":false,
+   "hasExternalGPS":false,
+   "departureHourFulfillment":{
+      "enabled":false,
+      "ranges":[]
+   },
+   "canReserve":true,
+   "visible":true,
+   "active":true,
+   "usesOfflineCount":false,
+   "usesTextToSpeech":false,
+   "hasBoardingCount":false,
+   "hasRounds":false,
+   "hasUnboardingCount":false,
+   "timeOnRoute":${GlobalVariable.timeOnRoute},
+   "distance":${GlobalVariable.distance},
+   "distanceInMeters":${GlobalVariable.distanceInMeters},
+   "route_type":3
 }
+
 
  """
 //Imprimimos para corroborar
@@ -192,4 +181,10 @@ GlobalVariable.bodyRoute = """
  
  //Imprimimos para corroborar
  println("El id de la reserva es: " + routeId)
+ 
+ //Convertimos a variable global para utilizarlo más adelante
+ 
+ GlobalVariable.routeId = routeId
+ 
+ WebUI.delay(10)
  

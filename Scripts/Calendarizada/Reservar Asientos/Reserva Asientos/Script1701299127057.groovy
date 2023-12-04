@@ -17,41 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Response = WS.sendRequest(findTestObject('RDD Admin/obtener_Vehiculos'))
+//Armamos el cuerpo de la solicitud para reservar asientos
 
-
-// Obtener el contenido de la respuesta como una cadena de texto
-def responseBody = Response.getResponseText()
-
-// Parsear la respuesta JSON
-def jsonSlurper = new groovy.json.JsonSlurper()
-def jsonResponse = jsonSlurper.parseText(responseBody)
-
-// Obtener el _id del vehiculo
-def vehicleId = jsonResponse[0]._id
-
-// Almacenar el _id en la variable global
-GlobalVariable.vehicleId = vehicleId
-
-// Imprimir el _id para verificar
-println("El _id del vehiculo es: ${vehicleId}")
-
-// Verificar si hay al menos un elemento en la lista
-if (jsonResponse.size() > 0) {
-	// Obtener la capacidad del vehiculo desde el objeto "category"
-	def capacity = jsonResponse[0].category?.capacity
-
-	// Verificar si la capacidad existe antes de almacenarla
-	if (capacity != null) {
-		// Almacenar la capacidad en la variable global
-		GlobalVariable.vehicleCapacity = capacity
-
-		// Imprimir la capacidad para verificar
-		println("La capacidad del vehiculo es: ${capacity}")
-	} else {
-		println("No se pudo encontrar la capacidad del vehiculo en la respuesta JSON.")
-	}
-} else {
-	println("La respuesta JSON no contiene elementos.")
+GlobalVariable.seatReservationBody = """
+{
+    "serviceId": "${GlobalVariable.serviceId}",
+    "departureId": "${GlobalVariable.departureId}",
+    "stopId": "${GlobalVariable.selectedStopId}",
+    "seat": "2"
 }
+"""
 
+
+//Enviamos la solicitud para poder realizar la reserva como usuario
+Response = WS.sendRequest(findTestObject('Object Repository/Calendarizada/Reserva_Asientos'))
+
+// Imprimir la respuesta en la consola
+println("Response Body: " + Response.getResponseText())
+
+// Verificar que la solicitud se haya enviado correctamente
+assert Response.getStatusCode() == 200 : "Failed to send request. Status code: ${Response.getStatusCode()}"
+//Obtener la ruta, con las paradas, y asociar la parada de la ruta al cuerpo de la reserva de asientos
+//Luego, modificar la fecha de la ruta y verificar que el asiento reservado siga ahi
+//Y verificar que cada 4 semanas estan las reservas

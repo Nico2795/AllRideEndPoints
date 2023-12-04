@@ -17,41 +17,34 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Response = WS.sendRequest(findTestObject('RDD Admin/obtener_Vehiculos'))
 
+// Obtenemos las paradas asociadas a la ruta
+Response = WS.sendRequest(findTestObject('Calendarizada/obtener_Lista_Orden_Paradas'))
+assert Response.getStatusCode() == 200 : "Failed to send request. Status code: ${Response.getStatusCode()}"
 
-// Obtener el contenido de la respuesta como una cadena de texto
-def responseBody = Response.getResponseText()
+responseBody = Response.getResponseText()
 
-// Parsear la respuesta JSON
-def jsonSlurper = new groovy.json.JsonSlurper()
-def jsonResponse = jsonSlurper.parseText(responseBody)
+jsonSlurper = new groovy.json.JsonSlurper()
 
-// Obtener el _id del vehiculo
-def vehicleId = jsonResponse[0]._id
+jsonResponse = jsonSlurper.parseText(responseBody)
 
-// Almacenar el _id en la variable global
-GlobalVariable.vehicleId = vehicleId
+// Definimos las paradas esperadas
+def expectedStops = [
+	["Id": "6564d9728956023c1b7f0a72", "sequence": 1],
+	["Id": "6564da0529b0d03173e6b892", "sequence": 2],
+	// Agrega más paradas según sea necesario
+]
 
-// Imprimir el _id para verificar
-println("El _id del vehiculo es: ${vehicleId}")
+// Verificamos la presencia y el orden de las paradas esperadas
+expectedStops.eachWithIndex { expectedStop, index ->
+	def stopId = expectedStop.Id
+	def sequence = expectedStop.sequence
 
-// Verificar si hay al menos un elemento en la lista
-if (jsonResponse.size() > 0) {
-	// Obtener la capacidad del vehiculo desde el objeto "category"
-	def capacity = jsonResponse[0].category?.capacity
+	def foundStop = jsonResponse.find { it._id == stopId && it.sequence == sequence }
 
-	// Verificar si la capacidad existe antes de almacenarla
-	if (capacity != null) {
-		// Almacenar la capacidad en la variable global
-		GlobalVariable.vehicleCapacity = capacity
-
-		// Imprimir la capacidad para verificar
-		println("La capacidad del vehiculo es: ${capacity}")
+	if (!foundStop) {
+		println("Error: La parada con ID $stopId y secuencia $sequence no se encontró en la lista de paradas asociadas.")
 	} else {
-		println("No se pudo encontrar la capacidad del vehiculo en la respuesta JSON.")
+		println("La parada con ID $stopId y secuencia $sequence se encontró en la posición $index.")
 	}
-} else {
-	println("La respuesta JSON no contiene elementos.")
 }
-

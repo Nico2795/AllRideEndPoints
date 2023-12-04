@@ -17,41 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Response = WS.sendRequest(findTestObject('RDD Admin/obtener_Vehiculos'))
+// Obtener los datos antes de la modificación
+def reservationsBeforeModification = GlobalVariable.reservationsBeforeModification
+def resourcesBeforeModification = GlobalVariable.resourcesBeforeModification
 
+// Obtener los datos después de la modificación
+def reservationsAfterModification = GlobalVariable.reservationsAfterModification
+def resourcesAfterModification = GlobalVariable.resourcesAfterModification
 
-// Obtener el contenido de la respuesta como una cadena de texto
-def responseBody = Response.getResponseText()
+// Comparar los datos antes y después
+assert reservationsBeforeModification == reservationsAfterModification : "Reservations data mismatch after modification"
+assert resourcesBeforeModification == resourcesAfterModification : "Resources data mismatch after modification"
 
-// Parsear la respuesta JSON
-def jsonSlurper = new groovy.json.JsonSlurper()
-def jsonResponse = jsonSlurper.parseText(responseBody)
-
-// Obtener el _id del vehiculo
-def vehicleId = jsonResponse[0]._id
-
-// Almacenar el _id en la variable global
-GlobalVariable.vehicleId = vehicleId
-
-// Imprimir el _id para verificar
-println("El _id del vehiculo es: ${vehicleId}")
-
-// Verificar si hay al menos un elemento en la lista
-if (jsonResponse.size() > 0) {
-	// Obtener la capacidad del vehiculo desde el objeto "category"
-	def capacity = jsonResponse[0].category?.capacity
-
-	// Verificar si la capacidad existe antes de almacenarla
-	if (capacity != null) {
-		// Almacenar la capacidad en la variable global
-		GlobalVariable.vehicleCapacity = capacity
-
-		// Imprimir la capacidad para verificar
-		println("La capacidad del vehiculo es: ${capacity}")
-	} else {
-		println("No se pudo encontrar la capacidad del vehiculo en la respuesta JSON.")
-	}
-} else {
-	println("La respuesta JSON no contiene elementos.")
-}
-
+// Imprimir un mensaje si la comparación es exitosa
+println("Datos antes y después de la modificación coinciden.")

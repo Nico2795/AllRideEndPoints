@@ -456,42 +456,42 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-25T01:00:00.000Z'</initValue>
+      <initValue>'2023-11-30T01:00:00.000Z'</initValue>
       <name>arrivalDate</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-25T14:45:57.000Z'</initValue>
+      <initValue>'2023-11-30T14:45:57.000Z'</initValue>
       <name>r_estimatedArrival1</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-25T00:25:29.000Z'</initValue>
+      <initValue>'2023-11-30T00:25:29.000Z'</initValue>
       <name>serviceDate</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-25T01:00:00.000Z'</initValue>
+      <initValue>'2023-12-01T01:00:00.000Z'</initValue>
       <name>modifiedArrivalDate</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-25T14:45:57.000Z'</initValue>
+      <initValue>'2023-11-30T14:45:57.000Z'</initValue>
       <name>r_modifiedEstimatedArrival</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-25T00:25:29.000Z'</initValue>
+      <initValue>'2023-11-30T00:25:29.000Z'</initValue>
       <name>modifiedServiceDate</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-25T00:20:00.000Z'</initValue>
+      <initValue>'2023-11-30T00:20:00.000Z'</initValue>
       <name>serviceDate20min</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-25T00:21:00.000Z'</initValue>
+      <initValue>'2023-11-30T00:21:00.000Z'</initValue>
       <name>serviceDate21min</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -528,5 +528,125 @@
       <description></description>
       <initValue>''</initValue>
       <name>timeOnRoute</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>url_Delete_Route</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>routeId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>bodyOrderStops</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>orderRouteId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://stage.allrideapp.com/api/v1/admin/pb/routes/list?community=653fd601f90509541a748683'</initValue>
+      <name>getUrlRoutes</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>assignResources</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>bodyAssignResources</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>urlGetServicesList</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>serviceId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vehicleCapacity</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://stage.allrideapp.com/api/v1/pb/user/booking'</initValue>
+      <name>seatReservation</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>selectedStopId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>departureId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>seatReservationBody</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2023-12-01T03:00:00.000Z'</initValue>
+      <name>startDate</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2023-12-30T02:59:59.999Z'</initValue>
+      <name>endDate4weeks</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2023-12-03T03:00:00.000Z'</initValue>
+      <name>endDate</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>urlModifyService</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>bodyModifyService</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>modifyServiceId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>reservationsBeforeModification</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>resourcesBeforeModification</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>reservationsAfterModification</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>resourcesAfterModification</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

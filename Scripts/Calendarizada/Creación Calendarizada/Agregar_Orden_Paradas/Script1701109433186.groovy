@@ -17,41 +17,45 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Response = WS.sendRequest(findTestObject('RDD Admin/obtener_Vehiculos'))
-
-
-// Obtener el contenido de la respuesta como una cadena de texto
-def responseBody = Response.getResponseText()
-
-// Parsear la respuesta JSON
-def jsonSlurper = new groovy.json.JsonSlurper()
-def jsonResponse = jsonSlurper.parseText(responseBody)
-
-// Obtener el _id del vehiculo
-def vehicleId = jsonResponse[0]._id
-
-// Almacenar el _id en la variable global
-GlobalVariable.vehicleId = vehicleId
-
-// Imprimir el _id para verificar
-println("El _id del vehiculo es: ${vehicleId}")
-
-// Verificar si hay al menos un elemento en la lista
-if (jsonResponse.size() > 0) {
-	// Obtener la capacidad del vehiculo desde el objeto "category"
-	def capacity = jsonResponse[0].category?.capacity
-
-	// Verificar si la capacidad existe antes de almacenarla
-	if (capacity != null) {
-		// Almacenar la capacidad en la variable global
-		GlobalVariable.vehicleCapacity = capacity
-
-		// Imprimir la capacidad para verificar
-		println("La capacidad del vehiculo es: ${capacity}")
-	} else {
-		println("No se pudo encontrar la capacidad del vehiculo en la respuesta JSON.")
-	}
-} else {
-	println("La respuesta JSON no contiene elementos.")
+//Creamos el cuerpo con una dirección fija con una sola ruta por el momento Alfredo Silva Carvallo
+GlobalVariable.bodyOrderStops = """
+{
+  "routeId": "${GlobalVariable.routeId}",
+  "stopId": "655768457c8bfa7bb15efb6e",
+  "stop_sequence": 1,
+  "cost": 0,
+  "sequence": "1",
+  "ownerIds": [
+    {
+      "id": "653fd601f90509541a748683",
+      "role": "community"
+    }
+  ],
+  "communities": ["653fd601f90509541a748683"],
+  "superCommunities": ["653fd68233d83952fafcd4be"]
 }
+
+"""
+//LLamamos a la solicutud para crear el orden de las paradas
+Response = WS.sendRequest(findTestObject('Calendarizada/crear_Orden_Paradas'))
+
+// Verificar que la solicitud se haya enviado correctamente
+assert Response.getStatusCode() == 200 : "Failed to send request. Status code: ${Response.getStatusCode()}"
+
+//Extraemos el id de 
+responseBody = Response.getResponseText()
+
+jsonSlurper = new groovy.json.JsonSlurper()
+
+jsonResponse = jsonSlurper.parseText(responseBody)
+
+orderRouteId = jsonResponse._id
+
+//Imprimimos para corroborar
+println("El id de la reserva es: " + orderRouteId)
+
+//Convertimos a variable global
+GlobalVariable.orderRouteId = orderRouteId
+
+//El mismo stopId que se utiliza aqui debe utilizarse almomento de poder realizar la reserv
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>obtener_Vehiculos</name>
+   <name>crear_Orden_Paradas</name>
    <tag></tag>
-   <elementGuidId>491b7564-50a0-45ab-97ce-953df6b3459f</elementGuidId>
+   <elementGuidId>b55e57fd-ff28-44b9-9cf1-23298d914c33</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -15,25 +15,37 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>true</autoUpdateContent>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;${GlobalVariable.bodyOrderStops}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>316235bb-6d01-4295-9b3f-4abff27f2669</webElementGuid>
+   </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.TokenAdmin}</value>
-      <webElementGuid>ce17140c-e6fa-44c0-a10d-99c39a9aca6e</webElementGuid>
+      <webElementGuid>ef8a9f38-48e6-4cef-baae-658ae1e7c3f8</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.0.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://stage.allrideapp.com/api/v1/admin/pb/vehicle?community=653fd601f90509541a748683</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>https://stage.allrideapp.com/api/v1/admin/pb/stop-time?community=653fd601f90509541a748683</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

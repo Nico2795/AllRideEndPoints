@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>obtener_Vehiculos</name>
+   <name>obtener_Lista_Orden_Paradas</name>
    <tag></tag>
-   <elementGuidId>491b7564-50a0-45ab-97ce-953df6b3459f</elementGuidId>
+   <elementGuidId>9f9b9a13-2e9d-4c75-b3e8-dea8759c9ac5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -27,13 +27,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.TokenAdmin}</value>
-      <webElementGuid>ce17140c-e6fa-44c0-a10d-99c39a9aca6e</webElementGuid>
+      <webElementGuid>1257379a-8981-4a52-b4e5-d2d550ff4b94</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.0.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://stage.allrideapp.com/api/v1/admin/pb/vehicle?community=653fd601f90509541a748683</restUrl>
+   <restUrl>https://stage.allrideapp.com/api/v1/admin/pb/stop-time/list?community=653fd601f90509541a748683</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

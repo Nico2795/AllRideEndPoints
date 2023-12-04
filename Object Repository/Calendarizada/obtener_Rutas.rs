@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>obtener_Vehiculos</name>
+   <name>obtener_Rutas</name>
    <tag></tag>
-   <elementGuidId>491b7564-50a0-45ab-97ce-953df6b3459f</elementGuidId>
+   <elementGuidId>7fb2a6e9-995a-4032-a7ea-8793ddd3cb3b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -27,13 +27,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.TokenAdmin}</value>
-      <webElementGuid>ce17140c-e6fa-44c0-a10d-99c39a9aca6e</webElementGuid>
+      <webElementGuid>8c07ff16-215d-4ec1-a7a9-0f85e8d53516</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.0.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://stage.allrideapp.com/api/v1/admin/pb/vehicle?community=653fd601f90509541a748683</restUrl>
+   <restUrl>${GlobalVariable.getUrlRoutes}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

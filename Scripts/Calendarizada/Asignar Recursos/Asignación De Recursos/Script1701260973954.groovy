@@ -16,42 +16,33 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+//Armamos el cuerpo de la solicitud
+GlobalVariable.bodyAssignResources = """
+[
+  {
+    "multipleDrivers": false,
+    "driver": {
+      "driverId": "${GlobalVariable.driverId}"
+    },
+    "drivers": [],
+    "vehicle": {
+      "vehicleId": "${GlobalVariable.vehicleId}",
+      "capacity": ${GlobalVariable.vehicleCapacity}
+    },
+    "passengers": [],
+    "departure": null
+  }
+]
+"""
+//Armamos la url de la solicitud
 
-Response = WS.sendRequest(findTestObject('RDD Admin/obtener_Vehiculos'))
+GlobalVariable.assignResources = "https://stage.allrideapp.com/api/v1/admin/pb/assignServiceResources/${GlobalVariable.serviceId}?community=${GlobalVariable.communityIdAdmin}"
 
+//Enviamos la solicitud HTTP
+Response = WS.sendRequest(findTestObject('Object Repository/Calendarizada/Asignar Vehiculo y conductor'))
 
-// Obtener el contenido de la respuesta como una cadena de texto
+assert Response.getStatusCode() == 200 : "Failed to send request. Status code: ${Response.getStatusCode()}"
+
 def responseBody = Response.getResponseText()
 
-// Parsear la respuesta JSON
-def jsonSlurper = new groovy.json.JsonSlurper()
-def jsonResponse = jsonSlurper.parseText(responseBody)
-
-// Obtener el _id del vehiculo
-def vehicleId = jsonResponse[0]._id
-
-// Almacenar el _id en la variable global
-GlobalVariable.vehicleId = vehicleId
-
-// Imprimir el _id para verificar
-println("El _id del vehiculo es: ${vehicleId}")
-
-// Verificar si hay al menos un elemento en la lista
-if (jsonResponse.size() > 0) {
-	// Obtener la capacidad del vehiculo desde el objeto "category"
-	def capacity = jsonResponse[0].category?.capacity
-
-	// Verificar si la capacidad existe antes de almacenarla
-	if (capacity != null) {
-		// Almacenar la capacidad en la variable global
-		GlobalVariable.vehicleCapacity = capacity
-
-		// Imprimir la capacidad para verificar
-		println("La capacidad del vehiculo es: ${capacity}")
-	} else {
-		println("No se pudo encontrar la capacidad del vehiculo en la respuesta JSON.")
-	}
-} else {
-	println("La respuesta JSON no contiene elementos.")
-}
-
+println(responseBody)
