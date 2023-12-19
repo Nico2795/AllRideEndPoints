@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se obtiene un usuario especifico de la comunidad</description>
+   <name>get_Specific_User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b6a7f9e4-7a4d-41a1-9e87-2cc2fc0b0948</testCaseGuid>
+</TestCaseEntity>

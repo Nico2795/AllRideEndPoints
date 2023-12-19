@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se asigna un vehiculo y un conductor que esté asociado a la comunidad</description>
+   <name>Assign Driver</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fca3559e-368d-4bb7-b4a3-635ead1e3729</testCaseGuid>
+</TestCaseEntity>

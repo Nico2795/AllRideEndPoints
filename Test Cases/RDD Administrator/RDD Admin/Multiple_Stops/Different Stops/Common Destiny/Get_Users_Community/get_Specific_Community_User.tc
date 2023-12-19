@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se obtiene un usuario en específico de la comunidad. En este caso Nico End</description>
+   <name>get_Specific_Community_User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7a82fda0-a368-4a79-9c4f-00052b6e8261</testCaseGuid>
+</TestCaseEntity>

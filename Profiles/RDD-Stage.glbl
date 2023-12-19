@@ -46,6 +46,16 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>''</initValue>
+      <name>requestBodyODD</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'20f31247778ffc0056a476694563cb65d206027b768b5814663e7cd8df7124776b181146ef6ba3f6016e6b89c1a4d5ee4cf68e75e162b0d0d41b3afdd5effbf7'</initValue>
+      <name>TokenAdminLevel4</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'https://stage.allrideapp.com/api/v1/admin/pb/odd/communityUsers?community=653fd601f90509541a748683'</initValue>
       <name>getCommunityUsers</name>
    </GlobalVariableEntity>
@@ -451,48 +461,68 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'e0170a303fd5b9d982f32570988a9e2bea05634425d08b54c1ac56aa162e772bda99cd49ace52ccb5c070fc26d8048cc4a573ec2b79ac49de8b2f6f8a5077b73'</initValue>
+      <initValue>'2eacdb42a68ffa12b3d9901816b6b6049b1a65c9232c2112a64c5935002683b35bbf10c046ef9670f529241849999f66c4645956ecb1b0ae2a1de5c3209f9f4b'</initValue>
       <name>TokenUsuario2</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-30T01:00:00.000Z'</initValue>
+      <initValue>''</initValue>
       <name>arrivalDate</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-30T14:45:57.000Z'</initValue>
+      <initValue>''</initValue>
       <name>r_estimatedArrival1</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-30T00:25:29.000Z'</initValue>
+      <initValue>''</initValue>
       <name>serviceDate</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-12-01T01:00:00.000Z'</initValue>
+      <initValue>''</initValue>
       <name>modifiedArrivalDate</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-30T14:45:57.000Z'</initValue>
+      <initValue>''</initValue>
       <name>r_modifiedEstimatedArrival</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-30T00:25:29.000Z'</initValue>
+      <initValue>''</initValue>
       <name>modifiedServiceDate</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-30T00:20:00.000Z'</initValue>
+      <initValue>''</initValue>
       <name>serviceDate20min</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-11-30T00:21:00.000Z'</initValue>
-      <name>serviceDate21min</name>
+      <initValue>''</initValue>
+      <name>serviceDate22min</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>startDate</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>endDate4weeks</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>endDate</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>scheduleDay</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -601,21 +631,6 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2023-12-01T03:00:00.000Z'</initValue>
-      <name>startDate</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'2023-12-30T02:59:59.999Z'</initValue>
-      <name>endDate4weeks</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'2023-12-03T03:00:00.000Z'</initValue>
-      <name>endDate</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>''</initValue>
       <name>urlModifyService</name>
    </GlobalVariableEntity>
@@ -648,5 +663,65 @@
       <description></description>
       <initValue>''</initValue>
       <name>resourcesAfterModification</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'7ac013eecd2dee616ef1a950121e8decc8ba333e6e4b03c596fe07fa6df4ef3a48127814367b6cba15dc20b0f93eb462e3c625c7b443806b5a23661755169e7e'</initValue>
+      <name>TokenDriver</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://stage.allrideapp.com/api/v2/pb/driver/routes/'</initValue>
+      <name>driverGetRoutesUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://stage.allrideapp.com/api/v2/pb/driver/route/'</initValue>
+      <name>driverGetRouteDetail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://stage.allrideapp.com/api/v2/pb/driver/oddepartures/acceptOrReject/'</initValue>
+      <name>driverAcceptOrReject</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>startDateToday</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>defaultResourcesScheduled</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>todayDate</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://stage.allrideapp.com/api/v1/admin/pb/odd/approve/'</initValue>
+      <name>adminApproval</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>reservationId2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>reservationIdUser1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>reservationIdUser2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>confirmDepartureUrl</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

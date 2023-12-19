@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Se crea el servicio con un usuario especifico, solicitado por un Admin que no tiene los niveles 1, 2, 3, 13 y 21. Por lo que el estado debería estar en pendingAdminAproval</description>
-   <name>Crear Servicio Usuario Especifico</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>77a7b677-94fb-4320-b928-94c0ce64b7eb</testCaseGuid>
-</TestCaseEntity>

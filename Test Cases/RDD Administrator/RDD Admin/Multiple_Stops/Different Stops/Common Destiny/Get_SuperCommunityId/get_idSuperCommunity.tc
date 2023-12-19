@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se obtiene el Id de la SC</description>
+   <name>get_idSuperCommunity</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d99fe0bc-8668-4c61-a42f-636c5ef4e55e</testCaseGuid>
+</TestCaseEntity>

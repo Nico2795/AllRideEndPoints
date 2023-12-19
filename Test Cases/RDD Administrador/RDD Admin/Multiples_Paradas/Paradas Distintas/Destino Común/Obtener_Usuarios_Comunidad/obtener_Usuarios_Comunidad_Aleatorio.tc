@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Se obtiene un usuario Aleatorio de la comunidad</description>
-   <name>obtener_Usuarios_Comunidad_Aleatorio</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>de775ceb-9caf-4605-838b-087034bcea8e</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Se cancela el servicio desde el admin</description>
-   <name>cancelar_Servicio</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>bfd25ec6-6ed9-4adb-bceb-d33580122d16</testCaseGuid>
-</TestCaseEntity>

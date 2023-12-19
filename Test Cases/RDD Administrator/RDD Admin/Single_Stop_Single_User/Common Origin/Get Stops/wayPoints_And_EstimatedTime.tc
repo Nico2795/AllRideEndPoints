@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Uso de API de googlemaps para obtener los waypoints y el tiempo estimado</description>
+   <name>wayPoints_And_EstimatedTime</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1d308d8f-db91-4cd1-9cac-a089a9c93403</testCaseGuid>
+</TestCaseEntity>

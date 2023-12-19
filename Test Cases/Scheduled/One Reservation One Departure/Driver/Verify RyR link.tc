@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se verifica que luego de aceptado el viaje calendarizado de parte del conductor, los recursos y reservas se asocien correctamente</description>
+   <name>Verify RyR link</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>87dffa9a-19b5-4e54-862f-564d6aeeba39</testCaseGuid>
+</TestCaseEntity>

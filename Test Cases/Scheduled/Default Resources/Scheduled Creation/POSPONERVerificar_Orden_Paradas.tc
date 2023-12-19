@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se verifica que las paradas ordenadas se hayan asignado correctamente a la ruta</description>
+   <name>POSPONERVerificar_Orden_Paradas</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cec69b9d-4591-4689-badd-d89082eecd71</testCaseGuid>
+</TestCaseEntity>

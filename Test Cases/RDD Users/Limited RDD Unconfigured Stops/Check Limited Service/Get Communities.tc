@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Si Falla, Significa que el RDD no es limitado</description>
+   <name>Get Communities</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c242fd0f-10c3-44fe-9ea0-18737fc5c355</testCaseGuid>
+</TestCaseEntity>

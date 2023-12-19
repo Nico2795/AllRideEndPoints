@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se verifica que las paradas ordenadas se hayan asignado correctamente a la ruta</description>
+   <name>POSTPONEVerify_Order_Stops</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>60de8129-87d2-408a-82d3-ee5e461d8723</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se obtiene el conductor</description>
+   <name>get_Driver</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>953f079a-1ac1-4610-af06-7f6e6fd2f454</testCaseGuid>
+</TestCaseEntity>

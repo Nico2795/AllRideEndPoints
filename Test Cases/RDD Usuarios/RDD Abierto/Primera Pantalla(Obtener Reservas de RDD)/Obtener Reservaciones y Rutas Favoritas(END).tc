@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Si falla, significa que no hay reservas hechas.</description>
-   <name>Obtener Reservaciones y Rutas Favoritas(END)</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>41b9b79d-8ee8-4ae8-ac58-8cb5df5edb4b</testCaseGuid>
-</TestCaseEntity>

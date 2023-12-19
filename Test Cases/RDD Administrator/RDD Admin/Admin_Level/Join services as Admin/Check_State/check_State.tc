@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se corrobora que el estado de la reservación esté en pendingAdminAproval</description>
+   <name>check_State</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b42b5cc6-0b04-4255-ab8c-615819f1c7a2</testCaseGuid>
+</TestCaseEntity>

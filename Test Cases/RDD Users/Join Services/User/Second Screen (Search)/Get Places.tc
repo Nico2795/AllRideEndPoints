@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Si falla no se pudieron obtener los lugares</description>
+   <name>Get Places</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3abbb6a9-5c7d-4a3f-9a04-28c03c1c859b</testCaseGuid>
+</TestCaseEntity>

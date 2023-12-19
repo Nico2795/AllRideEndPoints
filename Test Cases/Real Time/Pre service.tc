@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se verifica que el tramo de pre servicio esté funcionando correctamente</description>
+   <name>Pre service</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>adbe8976-45c2-4572-b0c4-bf31c4d66467</testCaseGuid>
+</TestCaseEntity>

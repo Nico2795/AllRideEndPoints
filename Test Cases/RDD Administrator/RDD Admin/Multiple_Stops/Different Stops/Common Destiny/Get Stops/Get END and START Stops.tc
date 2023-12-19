@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se obtiene y se elige la parada de destino y el origen</description>
+   <name>Get END and START Stops</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>200a6a20-2ca0-4ee2-9fd4-b1b375aa20c0</testCaseGuid>
+</TestCaseEntity>

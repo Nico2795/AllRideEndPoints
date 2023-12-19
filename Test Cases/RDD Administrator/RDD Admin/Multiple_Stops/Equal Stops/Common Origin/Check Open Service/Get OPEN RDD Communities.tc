@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Si es que falla significa que no tiene el RDD Abierto y no se puede obtener la comunidad.&#xd;
+Para crear RDD desde el admin, la comunidad debe estar abierta</description>
+   <name>Get OPEN RDD Communities</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ba874744-d2e3-41e6-a75d-7a3137e26c2c</testCaseGuid>
+</TestCaseEntity>

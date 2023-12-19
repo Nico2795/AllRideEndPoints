@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se obtiene el Id del admin y el nivel, en este caso debe quedar en pendingAdminAproval&#xd;
+1, 2, 3, 13 y 21 : pendingDriverAssignment&#xd;
+Otros: pendingAdminAproval</description>
+   <name>get_AdminID</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>daf88d63-8c38-45ff-a5f9-682da6b0d3b0</testCaseGuid>
+</TestCaseEntity>

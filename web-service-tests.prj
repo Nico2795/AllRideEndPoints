@@ -4,9 +4,10 @@
    <name>web-service-tests</name>
    <tag></tag>
    <UUID>a2827aad-0aae-4c31-964f-a3bb147e2733</UUID>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\nico2\Katalon Studio\AllRideEndPoints\web-service-tests.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\nico2\Katalon Studio\PruebaGit\AllRideEndPoints\web-service-tests.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

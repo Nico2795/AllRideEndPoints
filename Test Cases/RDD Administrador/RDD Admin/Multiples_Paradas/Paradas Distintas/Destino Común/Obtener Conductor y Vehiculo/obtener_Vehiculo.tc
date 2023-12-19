@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Se obtienen los datos del vehiculo</description>
-   <name>obtener_Vehiculo</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>47a83f57-bc05-4f7b-a782-9191a5e2a2d3</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>get_AdminIdLevelIncorrect</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d287aedb-8d9e-41a2-8728-b28fd0aa6e4f</testCaseGuid>
+</TestCaseEntity>

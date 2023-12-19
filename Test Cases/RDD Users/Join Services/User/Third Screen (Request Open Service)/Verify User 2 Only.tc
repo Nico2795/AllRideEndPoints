@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se verifica que el usuario 2 sea el unico que queda en la reserva creada luego de que el usuario1 cancelara el servicio</description>
+   <name>Verify User 2 Only</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>41b77d75-d533-4a3d-a10c-dfb6410cf611</testCaseGuid>
+</TestCaseEntity>
